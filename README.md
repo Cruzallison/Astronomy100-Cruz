@@ -9,3 +9,19 @@ https://drive.google.com/drive/folders/1CvefFN1h1UUQXMcah3WXTow3PUKpvOTG?usp=dri
 
 
 First steps first, download that folder from that google drive. Within it you will find two different kinds of data. The first kind is data collected from Kepler Cam, this includes our two science fits files, as well as all of our flats and biases needed for the reduction pipeline. The other kind is six differently labelled Isochrones that you will be able to use in HR-Diagram&CSV.py 
+
+
+Once the folder is downloaded I recommend keeping it labelled data for simplicities sake, but in all honesty whatever you want to label it works, as you will need to individually enter the different pathways in the code to make it run. If you want to fully go through the reduction steps to make sure that this is fully and entirely reproducable feel free to continue with this section, otherwise you can skip to the section labelled Analysis and continue from there. The only caveat with the reduction is that you will have to go to a website online as part of the process. If you're down for some reduction, open up Reduction&Mosaic.py in order to get to work. 
+
+
+# Reduction
+
+
+If you are using a python workspace like Cursor that has a built in workspace directory, you may have to drag your data folder into that directory in order to get it kicking, if not however you will just be able to fully enter in the pathway to the files and go from there. Run the python code and you should be prompted for a full pathway to your file directory. Here you will want to enter the full pathway to the either of the files labelled g_band.UR.fits or r_band.UR.fits as these are the un-reduced (UR) science files that you will want to reduce. Once you enter the pathway and wait a few seconds it should export into your data folder a reduced fits file and a reduced and mosaiced fits file labelled "file name"Reduced.fits and 
+"file name"Reduced_mosaic.fits respectively. Do this process for both the g_band and r_band fits files.
+
+
+Now go to Nova.Astrometry.net/upload for the final reduction process. Here click on choose file, find your Reduced_mosaic.fits file and press upload. After waiting for a few minutes a blue link that says Go to results page should appear. Click on that and you'll be taken to a page with a lot of information on it. Here you should be able to, on the right hand side of the page with all of the blue hyper links, find a link labelled new-image.fits. Click on that and it should begin the download process for your now fully reduced fits file. When it downloads, I recommend renaming it to something like r_band_reduced.Fits and moving it to your data folder. Repeat this step for your other reduced_mosaic file and you should now be set to run the HR diagram code!
+
+
+# Analysis
