@@ -1,4 +1,4 @@
-# Astronomy100-Cruz
+# Astronomy100-Cruz Allison
 Project for Astro100  
 
 
