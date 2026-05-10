@@ -2,6 +2,9 @@
 Within this download you should find two different python codes, one named Reduction&Mosaic.py and the other named HR-Diagram&CSV.py
 
 
+Dependencies for both scripts are astropy, numpy, matplotlib, and photutils, so if not all of these are installed, install them in a terminal before running the scripts.
+
+
 For either of these to work you first need Data to go along with them. This data is stored in a google drive that can be downloaded at this link here
 
 
